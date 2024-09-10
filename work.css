@@ -1,0 +1,73 @@
+*,
+*:before,
+*:after{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+.wrap{
+    box-sizing: content-box;
+    display: flex;
+    /*background-color:rgb(145, 126, 223);*/
+    background-image: linear-gradient(rgb(21, 13, 61), rgb(167, 132, 227));
+    height: 70px;
+    padding: 50px 30px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.2); 
+}
+.words{
+   
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    color:rgb(118, 184, 31);
+    padding-left: 10px;
+    padding-right: 30px;
+    overflow: hidden;
+}
+
+span{
+    padding-top: 10px;
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+  
+    color:rgb(219, 145, 228);
+    animation: spin_words 5s infinite;
+}
+
+@keyframes spin_words{
+    10%{
+        transform: translateY(-112%);
+    }
+
+   30%{
+       transform: translateY(-100%);
+   }
+   
+   
+   45%{
+    transform: translateY(-212%);
+   }
+
+   60%{
+    transform: translateY(-200%);}
+
+    80%{
+        transform: translateY(-312%);}
+    
+   100%{
+    transform: translateY(-300%);
+   }
+    
+    
+   
+}
+p{
+    padding-top: 10px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    color:black;
+}
